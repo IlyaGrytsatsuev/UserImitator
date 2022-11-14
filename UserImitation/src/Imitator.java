@@ -16,7 +16,6 @@ public class Imitator {
     public void GetRequestImitation() throws IOException {
         httpURLConnection = (HttpURLConnection) url.openConnection();
         int responseCode = httpURLConnection.getResponseCode();
-        httpURLConnection.setRequestMethod("GET");
 
         if(responseCode == httpURLConnection.HTTP_OK){
             System.out.println("Get request is success !");
